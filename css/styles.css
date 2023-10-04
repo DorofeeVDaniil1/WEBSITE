@@ -1,0 +1,60 @@
+/* Общие стили для заголовков */
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Стили для фона и отступов разделов */
+section {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Стили для карточек отзывов и достижений */
+.review-card, .achievement-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для футера */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Медиа-запросы для адаптивного дизайна */
+@media (max-width: 768px) {
+    .review-card, .achievement-card {
+        padding: 10px;
+    }
+}
+/* Стили для фоновой фотографии с текстом */
+.bg-image {
+    background-image: url('background-image.jpg'); /* Замените 'background-image.jpg' на путь к вашей фотографии */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    height: 100vh;
+    overflow: auto;
+    position: relative; /* Добавляем позицию относительно для кнопки */
+}
+
+/* Стили для текста на фотографии */
+.jumbotron h1, .jumbotron p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Стили для кнопки прокрутки */
+.scroll-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}

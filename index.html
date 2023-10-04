@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Институт Технологий</title>
+    <link rel="stylesheet" href="css\styles.css">
+    <!-- Подключение Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Фотография с текстом поверх нее -->
+    <div class="jumbotron jumbotron-fluid text-center bg-image">
+        <div class="container">
+            <h1 class="display-4 text-white font-weight-bold">Информационные системы и технологии в административном управлении</h1>
+            <p class="lead text-white font-weight-bold">Программа подготовки бакалавриата ИРНИТУ по направлению 09.03.02</p>
+        </div>
+        <!-- Кнопка для прокрутки вниз -->
+        <div class="scroll-button">
+            <a href="#welcome" class="btn btn-primary btn-lg" id="scroll-down-button">Прокрутить вниз</a>
+        </div>
+    </div>
+    <header id="welcome">
+        <h1 class="text-center">Добро пожаловать в Институт Технологий</h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- Навигационное меню с Bootstrap -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">О нас</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Учебные программы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+     <!-- Добавлен раздел "Краткие сведения об образовательной программе" -->
+     <section class="container" id="program-info">
+        <h2>Краткие сведения об образовательной программе</h2>
+        <p>
+            Программа бакалавриата по профилю подготовки «Информационные системы и технологии в административном управлении» включает в себя изучение теоретических основ и приобретение практических навыков разработки программного обеспечения, создания и эксплуатации информационных систем и технологий, предназначенных для решения разнообразных задач: от автоматизации бизнес-процессов, до разработки мобильных и web-приложений и создания информационных технологий поддержки принятия решений.
+        </p>
+        <p>
+            В ходе обучения студенты учатся применять языки (C, C++, C#, Java, PHP, JavaScript, Python, Kotlin) и технологии программирования, в том числе web-технологии, технологии анализа данных и искусственного интеллекта.
+        </p>
+    </section>
+    
+    <section class="container">
+        <h2>Отзывы выпускников</h2>
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="review-card">
+                    <img src="img\graduate1.jpg" alt="Фото выпускника 1" class="img-fluid">
+                    <p><strong>Юлия Дорофеева</strong></p>
+                    <p>"Институт Технологий был отличным местом для обучения. Я получил здесь знания, которые пригодились мне в карьере."</p>
+                </div>  
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="review-card">
+                    <img src="img\graduate2.jpg" alt="Фото выпускника 2" class="img-fluid">
+                    <p><strong>Анна Смирнова</strong></p>
+                    <p>"Спасибо Институту Технологий за прекрасные годы обучения. Я горжусь тем, что являюсь его выпускницей."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>Достижения выпускников</h2>
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="achievement-card">
+                    <img src="img\achievement1.jpg" alt="Фото достижения 1" class="img-fluid">
+                    <h3><a href="https://istu.edu/news/achievement1">Новость 1</a></h3>
+                    <p>Выпускник Института Технологий получил престижную награду за свои научные исследования.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="achievement-card">
+                    <img src="img\achievement2.jpg" alt="Фото достижения 2" class="img-fluid">
+                    <h3><a href="https://istu.edu/news/achievement2">Новость 2</a></h3>
+                    <p>Два выпускника Института Технологий стали успешными предпринимателями и запустили собственные компании.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Дополнительные разделы и стили оформления -->
+    
+    <footer class="container text-center">
+        <p>&copy; 2023 Институт Технологий</p>
+    </footer>
+
+    <!-- Подключение Bootstrap JS (по желанию) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('scroll-down-button').addEventListener('click', function(event) {
+            event.preventDefault();
+            const targetElement = document.querySelector(this.getAttribute('href'));
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
